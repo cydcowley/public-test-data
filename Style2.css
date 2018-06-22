@@ -40,7 +40,6 @@ EDITED
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -53,17 +52,16 @@ EDITED
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 90%; }
+    width: 80%; }
   .column,
-  .columns {
-    margin-left: 4%; }
+
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
