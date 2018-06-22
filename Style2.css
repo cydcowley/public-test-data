@@ -59,7 +59,7 @@ EDITED
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 85%; }
   .column,
 
   .column:first-child,
