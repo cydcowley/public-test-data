@@ -39,7 +39,7 @@ $(window).on('load', function() {
 
 
 /** Returns xyz trace of a sphere as a nxn array, given radius and n as inputs */
-    function makesphere(r,N){
+    function makesphere(r,N,w){
         let x=[], y=[], z=[];
         for (let i = 0; i <= N; i++) {
             let dx=[],dy=[],dz=[];
