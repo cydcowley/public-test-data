@@ -4,91 +4,61 @@ body {
 
 }
 
-.bluequad {
-    border-bottom: 18px solid #00b8af;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    height: 0px;
-    width: 10px;
+#trapezoid {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 100vh solid #003E74;
+    border-left: 0vw solid transparent;
+    border-right: 20vw solid transparent;
+    height: 0vh;
+    width: 10vw;
 }
 
-
-
-.a {
-    position: absolute;
-    width: 50vh;
-    height: 50vh;
-    -webkit-animation: mymovea 10s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
+*, html {
+    margin:0;
+    padding:0;
+    overflow: hidden;
 }
 
-.b {
+.container {
     position: absolute;
-    width: 15vh;
-    height: 15vh;
-    transform: rotate(220deg);
-    -webkit-animation: mymoveb 10s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
-}
-
-.c {
-    position: absolute;
-    right: -30vh;
-    bottom: -30vh;
-    width: 100vh;
-    height: 100vh;
-    transform: rotate(-40deg);
-}
-
-.trap {
-    position: absolute;
-    left: -34vw;
-    top: 0vh;
-    width: 80vw;
-    height: 150vh;
-	background: #0091D4;
-    transform: rotate(-30deg);
-
-}
-
-.teach {
-    font-family: fira sans;
-    position: absolute;
-    left: 65vw;
     top: 70vh;
-    color: #003E74;
-    cursor:pointer;
-    mix-blend-mode: color(#EBEEEE);
+    right: 2vw;
+}
+
+.button {
+    border: 0.1vh solid #003E74;
+    list-style: none;
+    text-decoration: none;
+    font-family: fira sans;
+    font-size: 4vh;
+    font-weight: 100;
+    width: 9vw;
+    text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-right: 2vw;
+    float: left;
+    cursor: pointer;
 }
 
 .learn {
-    font-family: fira sans;
-    position: absolute;
-    left: 45vw;
-    top: 70vh;
-    cursor:pointer;
     color: #003E74;
-        mix-blend-mode: difference;
+    mix-blend-mode: color(#EBEEEE);
+    transition: background-color ease-in 0.5s;
 }
+
+.teach {
+    color: #003E74;
+    mix-blend-mode: color(#EBEEEE);
+    transition: background-color ease-in 0.5s;
+}
+
 .code {
-    font-family: fira sans;
-    position: absolute;
-    left: 85vw;
-    top: 70vh;
-    cursor:pointer;
     color: #003E74;
+    mix-blend-mode: color(#EBEEEE);
+    transition: background-color ease-in 0.5s;
 }
-
-@keyframes mymovea {
-    0%   {left:-3vh; top:-7vh;}
-    50%  {left:0vh; top:-2vh;}
-    100% {left:-3vh; top:-7vh;}
-}
-
-
-@keyframes mymoveb {
-    0%   {left:23vh; top:10vh;transform: rotate(220deg);}
-    50%  {left:25vh; top:8vh;transform: rotate(210deg);}
-    100% {left:23vh; top:10vh;transform: rotate(220deg);}
-}
-
