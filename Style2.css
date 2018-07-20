@@ -886,25 +886,7 @@ body, *{
 pre,code{
 }
 
-body::after{
-    content: "Imperial Visualisations   ";
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #003E74;
-    background-image: url(https://manglekuo.com/i-v/imperial-white-logo.svg);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
 
-    color: #fff;
-    text-align: right;
-    line-height: 50px;
-
-    white-space: pre;
 }
 
 body.no-nav::after{

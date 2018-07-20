@@ -70,7 +70,7 @@ $(window).on('load', function() {
         let R= $(this).val();
         console.log(R)
         Plotly.animate(div="graph", {
-            data: [makesphere(R,9)],
+            data: [makesphere(R,50)],
             traces: [0],
             layout: {}
         }, {
@@ -94,7 +94,7 @@ let anim, dr= 0.4;
             dom.animationInput.val(R)
 
             Plotly.animate(div="graph", {
-            data: [makesphere(R,9)],
+            data: [makesphere(R,50)],
             traces: [0],
             layout: {}
         }, {
